@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2fr, 1fr) 2fr;
+        grid-auto-rows: minmax(100px, auto); /*Made height of each rows minimum 100px but max is auto*/
+    }
+
+    .wrapper > div {
+        background: #ccc;
+        padding: 10px;
+    }
+
+    .wrapper > div:nth-child(odd) {
+        background: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt facere ipsum dignissimos quasi, aperiam enim incidunt aut blanditiis nihil esse mollitia nobis nemo qui quibusdam? Eveniet eligendi, placeat velit similique, numquam totam alias soluta neque quod, minus rerum id aspernatur maxime excepturi commodi molestias ipsum laboriosam ad sed aliquid sequi dolorem quae. Nesciunt commodi tempore eaque molestiae sapiente officiis ipsa quibusdam eum consequuntur ab facere quod exercitationem cupiditate dicta rerum error illum iusto, assumenda a voluptatum reprehenderit ratione. Corrupti, atque?</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+</html>
